@@ -6,6 +6,8 @@ const som_CAIU = new Audio();
 som_CAIU.src = './efeitos/caiu.wav'
 const som_PONTO = new Audio();
 som_PONTO.src = './efeitos/ponto.wav';
+const som_PULO = new Audio();
+som_PULO.src = './efeitos/pulo.wav';
 const sprites = new Image();
 sprites.src = './sprites.png';
 
@@ -300,6 +302,7 @@ Telas.JOGO = {
         globais.flappyBird.desenha();
     },
     click() {
+        som_PULO.play();
         globais.flappyBird.pula();
     },
     //if (paraJOGO )
